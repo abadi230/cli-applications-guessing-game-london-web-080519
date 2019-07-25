@@ -2,7 +2,8 @@ require "pry"
 def run_guessing_game
 	roll = 1+rand(6)
   guess = "Guess a number betwen 1 and 6."
-# 	wrong = "Sorry! The computerguessed #{roll}."
+  right = "You guessed the correct number!"
+  wrong = "Sorry! The computer guessed #{roll}."
 	puts guess
 	
 	input = gets.chomp
@@ -12,10 +13,10 @@ def run_guessing_game
       
     
     elsif input.to_i == roll
-      puts "You guessed the correct number!"
+      puts right
     else
       
-      puts "Sorry! The computer guessed #{roll}."
+      puts wrong
     end 
     
     
