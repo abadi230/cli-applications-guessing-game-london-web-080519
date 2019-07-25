@@ -11,10 +11,8 @@ def run_guessing_game
       puts "Goodbye!"
       
     
-    elsif input_string.to_i =! roll
-      puts guess
-      input_string
-      # puts wrong
+    elsif input.to_i == roll
+      puts "You guessed the correct number!"
     end 
     
     
