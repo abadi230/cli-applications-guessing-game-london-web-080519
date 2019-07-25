@@ -14,6 +14,7 @@ def run_guessing_game
     elsif input.to_i == roll
       puts "You guessed the correct number!"
     else
+      puts guess
       puts "Sorry! The computerguessed #{roll}."
     end 
     
